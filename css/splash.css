@@ -2,7 +2,7 @@
     global styles
     ========================================================================== */
     body {
-        margin: 0; background: red; -webkit-text-size-adjust: 100%;
+        margin: 0; -webkit-text-size-adjust: 100%;
     }
     @font-face {
         font-family: 'MuseoSans';
@@ -37,7 +37,8 @@
         position: absolute; font-size: 1em; width: 100%; overflow-x: hidden;
         font-family: 'MuseoSans', Arial, Helvetica, sans-serif; font-weight:100; color:#444;
         border-top: 4px solid #2074c9; border-bottom: 4px solid #454a51;
-        background: url(../img/branching-bg.png) #fff no-repeat 50% 7.375rem;
+        /*background: url(../img/branching-bg.png) #fff no-repeat 50% 7.375rem;*/
+        background: center 100% repeat-y url(../img/grid.png);
     }
         .c6-logo__img { 
             margin: 3em 0 0; width: 9.625rem;
@@ -217,4 +218,8 @@
         .ipad__tooltip, .iphone__tooltip {
             display:none;
         }
+    }
+
+    .footer__group {
+        height:100%; background-color:#eeeeee; margin-top:24.875rem;
     }
