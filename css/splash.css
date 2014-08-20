@@ -2,7 +2,7 @@
     global styles
     ========================================================================== */
     body {
-        margin: 0; background: #454a51; -webkit-text-size-adjust: 100%;
+        margin: 0; background: red; -webkit-text-size-adjust: 100%;
     }
     @font-face {
         font-family: 'MuseoSans';
@@ -64,6 +64,8 @@
         .copy__legal {
             font-size: 0.75em;/*12px*/ width:100%; color: #aaa; margin: 22.667em 0 2.5em;
         }
+
+
 
     .ipad__img, .iphone__img {
         position: absolute;
