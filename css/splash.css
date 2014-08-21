@@ -37,8 +37,7 @@
         position: absolute; font-size: 1em; width: 100%; overflow-x: hidden;
         font-family: 'MuseoSans', Arial, Helvetica, sans-serif; font-weight:100; color:#444;
         border-top: 4px solid #2074c9;
-        /*background: url(../img/branching-bg.png) #fff no-repeat 50% 7.375rem;*/
-        background: center 100% repeat-y url(../img/grid.png) #fff;
+        background: url(../img/branching-bg.png) #fff no-repeat 50% 7.375rem;
     }
         .c6-logo__img { 
             margin: 3em 0 0; width: 9.625rem;
@@ -221,14 +220,65 @@
     }
 
     .footer__group {
-        height:100%; background-color:#eeeeee; border-top: 0.125rem solid #c6c6c6; margin:24.875rem 0 0 0; 
-        padding:2.25rem 10%;
+        height:18.0625rem; background: center 100% repeat-y url(../img/grid.png) #fff;
+        background-color:#eeeeee; border-top: 0.125rem solid #c6c6c6; 
+        margin:24.875rem 0 0 0; padding:2.25rem 19.25%; line-height:1.5rem; /* line-height:24px */
     }
+            .footer__section {
+                width:17.0625rem; margin-right:6.5rem; float: left;
+            }
+                .footer__h1 {
+                    color:#696969; list-style:none;
+                }
+                    .footer__copy {
+                        font-size:.875em; /* 14px */ color:#696969; 
+                    }
+                .siteMap__list {
+                    list-style: none;
+                }
+                    .footer__nav--active {
+                        color:#4c4c4c; font-size:0.875rem;
+                        /* font-size:14px */
+                        font-family: 'MuseoSans', Arial, Helvetica, sans-serif; font-weight:300;
+                        text-decoration: none; 
+                    }
+                        .siteMap__subList {
+                            list-style: none; text-indent:1.5rem; font-size:.875em; /* 14px */ 
+                        }
+                        .siteMap__subList:before {
+                            content:"•";
+                            color:#c6c6c6;
+                        }
 
-        .footer__section {
-            width:28.5625rem; float: left;
-        }
+            .footer__legalCopy {
+                position:absolute; bottom:0; text-align:center;
+            }
 
-        .footer__legalCopy {
-            position:absolute; bottom:0;
-        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
