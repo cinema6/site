@@ -230,13 +230,13 @@
            max-width:100rem; width:100%; height:100%; padding-left:7.5%;
         }
             .footer__siteMap {
-                width:25%; min-width:9rem; margin:0 5% 2rem 0; padding:0; float:left; background-color:pink;
+                width:25%; min-width:9rem; margin:0 5% 4rem 0; padding:0; float:left; /*background-color:pink;*/
             }
             .footer__contact {
-                width:25%; min-width:9rem; margin:0 5% 2rem 0; padding:0; float:left; background-color:yellow;
+                width:25%; min-width:9rem; margin:0 5% 4rem 0; padding:0; float:left; /*background-color:yellow;*/
             }
             .footer__careers {
-                width:25%; min-width:9rem; margin:0 5% 2rem 0; padding:0; float:left; background-color:lime;
+                width:25%; min-width:9rem; margin:0 5% 4rem 0; padding:0; float:left; /*background-color:lime;*/
             }
 
                 .footer__header {
@@ -246,28 +246,28 @@
                 .footer__copy {
                     font-size:1em; /* 14px */ color:#8c8c8c; text-decoration:none; 
                 }
-
                 .siteMap__list {
-                    list-style: none;
+                    padding:0; list-style: none; 
                 }
-                    .footer__link {
-                        color:#4c4c4c; font-size:1em;
-                        font-family: 'MuseoSans', Arial, Helvetica, sans-serif; font-weight:500;
-                        text-decoration: none; white-space:normal;
-                    }
-                    .footer__link:hover {
-                        color:#4c4c4c; text-decoration:underline;
-                    }
-                        .siteMap__subList {
-                            list-style: none; margin-left:1.5rem; font-size:1em;
+                        .footer__link {
+                            color:#4c4c4c; font-size:1em;
+                            font-family: 'MuseoSans', Arial, Helvetica, sans-serif; font-weight:500;
+                            text-decoration: none;
                         }
-                        .siteMap__subList:before {
-                            content:"•";
-                            color:#c6c6c6;
+                        .footer__link:hover {
+                            color:#4c4c4c; text-decoration:underline;
                         }
+                            .siteMap__subList {
+                                list-style: none; margin-left:1.5rem; font-size:1em;
+                            }
+                            .siteMap__subList:before {
+                                content:"•";
+                                color:#c6c6c6;
+                            }
 
             .footer__legalCopy {
-                font-size:0.875rem; text-align:center; white-space:nowrap; background-color:red;
+                font-size:0.875rem; text-align:center; white-space:nowrap; /*background-color:red;*/
+                position:absolute; bottom:0; left:25%; right:25%;
             }
 
     @media screen and (min-width: 470px) and (max-width: 1016px) {
@@ -278,14 +278,17 @@
 
     @media screen and (min-width: 603px) and (max-width: 1016px) {
             .footer__siteMap {
-               width:40%; margin:0 10% 2rem 0;
+               width:40%; margin:0 10% 4rem 0;
                 }
             .footer__contact {
-                width:40%; margin:0rem 10% 2rem 0;
+                width:40%; margin:0rem 10% 4rem 0;
             }
             .footer__careers {
-                width:100%; margin:0 0 2rem 0;
+                width:100%; margin:0 0 4rem 0;
             }
+        .footer__legalCopy {
+            font-size:0.75rem; line-height:1.5em; left:22%; right:22%;
+        }
 
     }
     @media screen and (max-width: 602px) {
@@ -293,14 +296,17 @@
            padding-left:0;
         }
             .footer__siteMap {
-               width:100%; margin:0 0 2rem 0;
+               width:100%; margin:0 0 4rem 0;
                 }
             .footer__contact {
-                width:100%; margin:0rem 0 2rem 0;
+                width:100%; margin:0rem 0 4rem 0;
             }
             .footer__careers {
-                width:100%; margin:0rem 0 2rem 0;
+                width:100%; margin:0rem 0 4rem 0;
             }
+        .footer__legalCopy {
+            font-size:0.75rem; line-height:1.5em; left:25%; right:25%;
+        }
 
     }
     @media screen and (max-width: 470px) {
@@ -308,7 +314,8 @@
             margin:12.4375rem 0;
         }
         .footer__legalCopy {
-            margin-top:1rem; font-size:0.75rem; line-height:1.5em; white-space:normal;
+            font-size:0.75rem; line-height:1.5em; margin-top:1rem; white-space:normal;
+            left:5%; right:5%;
         }
     }
 
