@@ -34,12 +34,10 @@
     c6-splash classes
     ========================================================================== */
     .splash__group {
-        
         position: absolute; font-size: 1em; width: 100%; overflow-x: hidden;
         font-family: 'MuseoSans', Arial, Helvetica, sans-serif; font-weight:100; color:#444;
         border-top: 4px solid #2074c9;
-        background: url(../img/branching-bg.png) #fff no-repeat 50% 7.375rem;
-        background-color: #fff;
+        background: url(../img/branching-bg.png) white no-repeat 50% 7.375rem;
     }
         .c6-logo__img { 
             margin: 3em 0 0; width: 9.625rem;
@@ -70,7 +68,7 @@
 
 
     .ipad__img, .iphone__img {
-        position: absolute;
+        position: absolute; 
     }
         .ipad__img {
             top: 5.25rem; left: -4.125rem; width: 17.875rem;/*286px*/ height: 755px;
@@ -223,11 +221,11 @@
 
     .footer__group {
          /*background: center 100% repeat-y url(../img/grid.png) #fff;*/
-        background-color:#eeeeee; border-top: 0.125rem solid #c6c6c6; font-size:14px; /* 1em */
+        background-color:#eee; border-top: 0.125rem solid #c6c6c6; border-bottom: 0.125rem solid #c6c6c6;font-size:14px; /* 1em */
         margin:24.875rem 0 0 0; padding:2.25rem 19.25%; line-height:1.5rem; /* line-height:24px */
     }
         .footer__container {
-           max-width:100rem; width:100%; height:100%; padding-left:7.5%;
+           max-width:100rem; width:100%; padding-left:7.5%;
         }
             .footer__siteMap {
                 width:25%; min-width:9rem; margin:0 5% 4rem 0; padding:0; float:left; /*background-color:pink;*/
