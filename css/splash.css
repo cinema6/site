@@ -3,6 +3,7 @@
     ========================================================================== */
     body {
         margin: 0; -webkit-text-size-adjust: 100%; 
+        background-color:#eee;
     }
     @font-face {
         font-family: 'MuseoSans';
@@ -221,7 +222,7 @@
 
     .footer__group {
          /*background: center 100% repeat-y url(../img/grid.png) #fff;*/
-        background-color:#eee; border-top: 0.125rem solid #c6c6c6; border-bottom: 0.125rem solid #c6c6c6;font-size:14px; /* 1em */
+        background-color:#eee; border-top: 0.125rem solid #c6c6c6; /* 1em */
         margin:24.875rem 0 0 0; padding:2.25rem 19.25%; line-height:1.5rem; /* line-height:24px */
     }
         .footer__container {
@@ -266,6 +267,7 @@
             .footer__legalCopy {
                 font-size:0.875rem; text-align:center; white-space:nowrap; /*background-color:red;*/
                 position:absolute; bottom:0; left:25%; right:25%;
+                color:#8c8c8c;
             }
 
     @media screen and (min-width: 470px) and (max-width: 1016px) {
@@ -316,29 +318,3 @@
             left:5%; right:5%;
         }
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
