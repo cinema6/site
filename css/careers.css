@@ -2,7 +2,7 @@
     global styles
     ========================================================================== */
     body {
-        -webkit-text-size-adjust: 100%; background-color:red;
+        -webkit-text-size-adjust: 100%; background-color:white;
     }
     @font-face {
         font-family: 'MuseoSans';
@@ -30,3 +30,60 @@
     /*  ==========================================================================
     c6-careers classes
     ========================================================================== */
+    /* header classes */
+    .mainNav__group {
+        background: center 100% repeat-y url(../img/grid.png) #eee;
+        border-bottom:0.125rem solid #c6c6c6; height:6rem; 
+        position:absolute; top:0; left:0; right:0;
+    }
+        .mainNav__container{
+            position:absolute; left:25%; right:25%;
+        }
+            .c6logo {
+                width:183px; height:44px; margin:1.75rem;
+            }
+            .mainNav__link {
+                float:right; margin:2.625rem 1.5rem 2.75rem 3.875rem;
+                color:#626262; font-size:1em;
+                font-family: 'MuseoSans', Arial, Helvetica, sans-serif; font-weight:500;
+                text-decoration: none;
+            }
+                .mainNav__link:hover {
+                    color:#2074c9;
+                }
+                #mainNav__currentPage {
+                    border-bottom:0.0625rem solid #2074c9;
+                }
+
+    /*  header media queries */
+    @media screen and (min-width: 1500px) and (max-width: 1800px) {
+        .mainNav__container{
+            left:12%; right:12%;
+        }
+    }
+    @media screen and (min-width: 800px) and (max-width: 1499px) {
+        .mainNav__container{
+            left:5%; right:5%;
+        }
+    }
+
+    @media screen and (min-width: 404px) and (max-width: 799px) {
+        .mainNav__container{
+            left:0; right:0;
+        }
+            .mainNav__link {
+                margin:2.625rem 1rem 2.75rem 0.875rem;
+            }
+    }
+    @media screen and (max-width: 403px) {
+        .mainNav__group {
+            height:10.25rem;
+        }
+            .c6logo {
+                margin:1.75rem 0rem 0rem 0rem;
+            }
+                .mainNav__link {
+                    margin:1.625rem 0.5rem 0rem 0.5rem;
+                }
+    }
+
