@@ -2,7 +2,7 @@
     global styles
     ========================================================================== */
     body {
-        -webkit-text-size-adjust: 100%; background-color:white;
+        -webkit-text-size-adjust: 100%; background-color:#eee; margin:0;
     }
     @font-face {
         font-family: 'MuseoSans';
@@ -34,11 +34,10 @@
     .mainNav__group {
         /*background: center 100% repeat-y url(../img/grid.png) #eee;*/
         background-color:#eee;
-        border-bottom:0.125rem solid #c6c6c6; height:6rem; 
-        position:absolute; top:0; left:0; right:0;
+        border-bottom:0.125rem solid #c6c6c6; height:5.8125rem; 
     }
         .mainNav__container{
-            position:absolute; left:25%; right:25%;
+            margin:0 25%;
         }
             .c6logo {
                 width:183px; height:44px; margin:1.75rem;
@@ -58,23 +57,23 @@
 
     /* content classes */
     .content__group {
-        position:absolute; top:9.5625rem; left:0; right:0;  
         font-family: 'MuseoSans', Arial, Helvetica, sans-serif; font-weight:100; font-size:1em;
-        text-align: center;
+        text-align: center; padding:3.3rem 0 40.9375rem 0; background-color:white;
     }
         .content__container{
-        position:absolute; left:25%; right:25%;
+            margin:0 25%;
+
         }
             .content__title {
                 font-weight:500; font-size:1.75em; color:#626262; 
-                padding:0 0.5em; margin-bottom:1em;
+                padding:0 0.5em; margin-bottom:1.025em;
             }
             .content__copy {
                 font-size:1em; color:#626262; line-height:1.75em; 
-                padding:0 0.5em; margin-bottom:3.5em;
+                padding:0 0.5em; margin-bottom:3.75em;
             }
             .content__jobTitles {
-                list-style: none; line-height:1.75em; color:#2074c9;
+                list-style: none; line-height:1.7em; color:#2074c9;
                 padding:0;
             }
                 .jobTitles__link:hover {
@@ -84,54 +83,68 @@
     /*  header and content media queries */
     @media screen and (min-width: 1500px) and (max-width: 1800px) {
         .mainNav__container, .content__container {
-            left:12%; right:12%;
+            margin:0 12%;
+        }
+        .content__group {
+        padding:3.3rem 0 30.9375rem 0;
         }
     }
     @media screen and (min-width: 800px) and (max-width: 1499px) {
         .mainNav__container {
-            left:5%; right:5%;
+            margin:0 5%;
         }
         .content__container {
-            left:5%; right:5%; padding:0 1em;
+            margin:0 5%; padding:0 1em;
+        }
+        .content__group {
+            padding:3.3rem 0 20.9375rem 0;
         }
     }
 
     @media screen and (min-width: 404px) and (max-width: 799px) {
         .mainNav__container {
-            left:0; right:0;
+            margin:0;
         }
             .mainNav__link {
                 margin:2.625rem 1rem 2.75rem 0.875rem;
             }
         .content__container{
-            left:0; right:0; padding:0 0.25em;
+            margin:0; padding:0 0.25em;
             }
+        .content__group {
+            padding:3.3rem 0 10.9375rem 0;
+        }
     }
     @media screen and (max-width: 403px) {
-        .mainNav__group {
-            height:10.25rem;
+        .mainNav__container{
+            text-align:center; position:absolute; left:0; margin:0;
         }
-            .c6logo {
-                margin:1.75rem 0rem 0rem 0rem;
+            .mainNav__group {
+                height:10.25rem;
             }
-                .mainNav__link {
-                    margin:1.625rem 0.5rem 0rem 0.5rem;
+                .c6logo {
+                    margin:1.75rem 0rem 0rem 0rem;
                 }
-            .content__title {
-                margin-top:4.25em;
+                    .mainNav__link {
+                        margin:1.625rem 0.5rem 0rem 0.5rem;
+                    }
+            .content__group {
+                padding:3.3rem 0 1.9375rem 0;
             }
-    }
+                .content__title {
+                    margin-top:4.25em;
+                }
+        }
 
     /* footer classes */
     .footer__group {
          /*background: center 100% repeat-y url(../img/grid.png) #fff;*/
         background-color:#eee; border-top: 0.125rem solid #c6c6c6; /* 1em */
-        margin:24.875rem 0 0 0; padding:2.25rem 19.25%; line-height:1.5rem; /* line-height:24px */
+        margin:0; padding:2.25rem 19.25%; line-height:1.5rem; /* line-height:24px */
         font-family: 'MuseoSans', Arial, Helvetica, sans-serif;
-        position:absolute; bottom:0;
     }
         .footer__container {
-           max-width:100rem; width:100%; margin-left:8%;
+           max-width:100rem; padding-left:8%;
         }
             .footer__siteMap {
                 width:25%; min-width:9rem; margin:0 5% 4rem 0; padding:0; float:left; /*background-color:pink;*/
@@ -151,7 +164,7 @@
                     font-size:1em; /* 14px */ color:#8c8c8c; text-decoration:none; 
                 }
                 .siteMap__list {
-                    padding:0; list-style: none; 
+                    padding:0; list-style: none; margin-bottom:0.025em;
                 }
                         .footer__link {
                             color:#4c4c4c; font-size:1em;
@@ -171,10 +184,11 @@
 
             .footer__legalCopy {
                 font-size:0.875rem; text-align:center; white-space:nowrap; /*background-color:red;*/
-                position:absolute; bottom:0; left:25%; right:25%;
+                margin:0 25%;
                 color:#8c8c8c;
             }
 
+    /* footer media queries */
     @media screen and (min-width: 1500px) and (max-width: 1016px) {
         .footer__group {
             margin:12.4375rem 0 0 0;
@@ -186,46 +200,43 @@
         }
     }
     @media screen and (min-width: 603px) and (max-width: 799px) {
+        .footer__container {
+            padding-left:0;
+        }
             .footer__siteMap {
-               width:40%; margin:0 5% 4rem 5%;
+               width:40%; margin:0 5% 4rem 0;
                 }
             .footer__contact {
-                width:40%; margin:0 5% 4rem 5%;
+                width:40%; margin:0 5% 5.5rem 5%;
             }
             .footer__careers {
                 width:100%; margin:0 0 4rem 0;
             }
         .footer__legalCopy {
-            font-size:0.75rem; line-height:1.5em; left:22%; right:22%;
+            font-size:0.75rem; line-height:1.5em; margin:0 22%;
         }
 
     }
     @media screen and (max-width: 602px) {
         .footer__group{
-            padding:2.25rem 2em; margin-left:0;
+            padding:2.25em 5em 2.25em 2em; 
         }
-            .section__container {
-               padding-left:0;
-            }
                 .footer__siteMap {
-                   width:100%; margin:0 0 4rem 0;
+                   width:100%; margin:0 0 4em 0; 
+
                     }
                 .footer__contact {
-                    width:100%; margin:0rem 0 4rem 0; 
+                    width:100%; margin:0em 0 4em 0; 
                 }
                 .footer__careers {
-                    width:100%; margin:0rem 0 4rem 0; 
+                    width:100%; margin:0em 0 4em 0; 
                 }
             .footer__legalCopy {
-                font-size:0.75rem; line-height:1.5em; left:25%; right:25%;
+                font-size:0.75rem; line-height:1.5em; margin:0 25%;
             }
     }
     @media screen and (max-width: 470px) {
-        .footer__group {
-            margin:12.4375rem 0;
-        }
         .footer__legalCopy {
-            font-size:0.75rem; line-height:1.5em; margin-top:1rem; white-space:normal;
-            left:5%; right:5%;
+            font-size:0.75rem; line-height:1.5em; margin:1rem 5% 0 5%; white-space:normal;
         }
     }
