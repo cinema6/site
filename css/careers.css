@@ -1,0 +1,32 @@
+/*  ==========================================================================
+    global styles
+    ========================================================================== */
+    body {
+        -webkit-text-size-adjust: 100%; background-color:red;
+    }
+    @font-face {
+        font-family: 'MuseoSans';
+        src: url('museosans-100-webfont.eot');
+        src: url('museosans-100-webfont.eot?#iefix') format('embedded-opentype'),
+             url('museosans-100-webfont.woff') format('woff'),
+             url('museosans-100-webfont.svg#museo_sans100') format('svg'),
+             url('museosans-100-webfont.ttf') format('truetype');
+        font-weight: 100;
+        font-style: normal;
+    }
+
+    /*  ==========================================================================
+    helper classes
+    ========================================================================== */
+    .clearfix:before,
+    .clearfix:after {
+        content: ' ';
+        display: table;
+    }
+    .clearfix:after {
+        clear: both;
+    }
+
+    /*  ==========================================================================
+    c6-careers classes
+    ========================================================================== */
