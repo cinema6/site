@@ -223,7 +223,7 @@
     .footer__group {
          /*background: center 100% repeat-y url(../img/grid.png) #fff;*/
         background-color:#eee; border-top: 0.125rem solid #c6c6c6; /* 1em */
-        margin:24.875rem 0 0 0; padding:2.25rem 19.25%; line-height:1.5rem; /* line-height:24px */
+        margin:24.875rem 0 0 0; padding:2.25rem 19.25%; line-height:1.5em; /* line-height:24px */
         font-size:0.875rem; /* 14px */
     }
         .footer__container {
@@ -297,19 +297,19 @@
     }
     @media screen and (max-width: 602px) {
         .footer__group {
-            font-size:0.75rem; margin:12.4375em 0 0 0; padding:1.5em;
+            font-size:0.75rem; margin:12.4375em 0 0 0; padding:1.5em 1.5em 0.5em 1.5em;
         }
         .footer__container {
            padding:0;
         }
             .footer__siteMap {
-               width:100%; margin:0 0 1em 0;
+               width:100%; margin:0;
                 }
             .footer__contact {
-                width:100%; margin:0 0 1em 0;
+                width:100%; margin:0;
             }
             .footer__careers {
-                width:100%; margin:0 0 1em 0;
+                width:100%; margin:0 0 0.25em 0;
             }
                 .footer__header {
                     margin:1em 0 0.5em 0;
@@ -325,3 +325,4 @@
         }
 
     }
+
