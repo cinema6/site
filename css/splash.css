@@ -257,7 +257,7 @@
                             color:#4c4c4c; text-decoration:underline;
                         }
                             .siteMap__subList {
-                                list-style: none; margin-left:1.5rem; font-size:1em;
+                                list-style: none; margin-left:1.5em; font-size:1em;
                             }
                             .siteMap__subList:before {
                                 content:"•";
@@ -296,9 +296,7 @@
     }
     @media screen and (max-width: 602px) {
         .footer__group {
-            font-size:0.75rem;
-            margin:12.4375em 0;
-            padding:1em;
+            font-size:0.75rem; margin:12.4375em 0; padding:1.5em;
         }
         .footer__container {
            padding:0;
@@ -312,6 +310,15 @@
             .footer__careers {
                 width:100%; margin:0 0 1em 0;
             }
+                .footer__header {
+                    margin:1em 0 0.5em 0;
+                }
+                    .footer__copy {
+                        margin:0;
+                    }
+                    .siteMap__list {
+                        margin:0;
+                    }
         .footer__legalCopy {
             font-size:0.75em; line-height:1.5em;
         }
