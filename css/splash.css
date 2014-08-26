@@ -273,6 +273,7 @@
     @media screen and (min-width: 470px) and (max-width: 1016px) {
         .footer__group {
             margin:12.4375rem 0 0 0;
+            padding:2.25rem 0;
         }
     }
 
