@@ -224,6 +224,7 @@
          /*background: center 100% repeat-y url(../img/grid.png) #fff;*/
         background-color:#eee; border-top: 0.125rem solid #c6c6c6; /* 1em */
         margin:24.875rem 0 0 0; padding:2.25rem 19.25%; line-height:1.5rem; /* line-height:24px */
+        font-size:0.875rem; /* 14px */
     }
         .footer__container {
            max-width:100rem;

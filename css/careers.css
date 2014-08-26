@@ -124,12 +124,12 @@
                 height:3.5em; 
             }
                 .c6logo {
-                    margin:1.2em 0 0 0.5em;
+                    margin:1.5em 0 0 0.5em;
                     width:110px; height:27px; float:left;
 
                 }
                     .mainNav__link {
-                        margin:1.8em 1em 0em 0; 
+                        margin:2.2em 1.5em 0em 0; 
                     }
             .content__group {
                 padding:0 0 5em 0; font-size:0.75rem;
@@ -144,10 +144,9 @@
 
     /* footer classes */
     .footer__group {
-         /*background: center 100% repeat-y url(../img/grid.png) #fff;*/
         background-color:#eee; border-top: 0.125rem solid #c6c6c6; /* 1em */
         padding:2.3125rem 25%; margin:0; line-height:1.5em; /* line-height:24px */
-        font-family: 'MuseoSans', Arial, Helvetica, sans-serif;
+        font-family: 'MuseoSans', Arial, Helvetica, sans-serif; font-size:0.875rem; /* 14px */
     }
         .footer__container {
            max-width:100rem;
@@ -189,7 +188,7 @@
                             }
 
             .footer__legalCopy {
-                font-size:0.875rem; text-align:center;
+                font-size:1em; text-align:center;
                 margin:0 25%;
                 color:#8c8c8c;
             }
@@ -230,7 +229,7 @@
     @media screen and (max-width: 602px) {
         .footer__group{
             font-size:0.75rem;
-            padding:0.5em; 
+            padding:1.5em; 
         }
             .footer__container {
                 padding-left:0;
