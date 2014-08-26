@@ -276,7 +276,7 @@
         }
     }
 
-    @media screen and (min-width: 603px) and (max-width: 1016px) {
+    @media screen and (min-width: 603px) and (max-width: 799px) {
         .footer__container {
            padding-left:0;
         }
