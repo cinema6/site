@@ -98,19 +98,13 @@
                 .apply__button {
                     background-color:#2074c9; border: solid 1px #2074c9; outline:none;
                     border-radius:5em; padding:1em 4em; margin:0 42% 5em 42%;
-                    
                 }
-                    .apply__button:hover {
-                        background-color:white; border: solid 1px #2074c9;
-                        color:#2074c9; text-decoration:none;
-                    }
-
                     .apply__text {
                         font-family: 'MuseoSans', Arial, Helvetica, sans-serif; font-weight:300; font-size:1.25em;
-                        text-align: center; color:white; text-decoration:none;
+                        text-align: center; color:#dbdbdb; text-decoration:none;
                     }
                         .apply__text:hover {
-                            color:#2074c9; text-decoration:none;
+                            text-decoration:none; color:white;
                         }
 
 
