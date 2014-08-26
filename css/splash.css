@@ -226,16 +226,16 @@
         margin:24.875rem 0 0 0; padding:2.25rem 19.25%; line-height:1.5rem; /* line-height:24px */
     }
         .footer__container {
-           max-width:100rem; width:100%; padding-left:7.5%;
+           max-width:100rem;
         }
             .footer__siteMap {
-                width:25%; min-width:9rem; margin:0 5% 4rem 0; padding:0; float:left; /*background-color:pink;*/
+                width:30%; min-width:9rem; margin:0 5% 4rem 0; padding:0; float:left; /*background-color:pink;*/
             }
             .footer__contact {
-                width:25%; min-width:9rem; margin:0 5% 4rem 0; padding:0; float:left; /*background-color:yellow;*/
+                width:30%; min-width:9rem; margin:0 0 4rem 0; padding:0; float:left; /*background-color:yellow;*/
             }
             .footer__careers {
-                width:25%; min-width:9rem; margin:0 5% 4rem 0; padding:0; float:left; /*background-color:lime;*/
+                width:30%; min-width:9rem; margin:0 0 4rem 5%; padding:0; float:left; /*background-color:lime;*/
             }
 
                 .footer__header {
@@ -265,24 +265,26 @@
                             }
 
             .footer__legalCopy {
-                font-size:0.875rem; text-align:center; white-space:nowrap; /*background-color:red;*/
-                position:absolute; bottom:0; left:25%; right:25%;
+                font-size:0.875rem; text-align:center; white-space:nowrap;
                 color:#8c8c8c;
             }
 
     @media screen and (min-width: 470px) and (max-width: 1016px) {
         .footer__group {
-            margin:12.4375rem 0 0 0;
-            padding:2.25rem 0;
+            margin:12.4375em 0 0 0;
+            padding:2.25em 3em;
         }
     }
 
     @media screen and (min-width: 603px) and (max-width: 1016px) {
+        .footer__container {
+           padding-left:0;
+        }
             .footer__siteMap {
-               width:40%; margin:0 10% 4rem 0;
+               width:45%; margin:0 0 4rem 0;
                 }
             .footer__contact {
-                width:40%; margin:0rem 10% 4rem 0;
+                width:45%; margin:0rem 0 4rem 5%;
             }
             .footer__careers {
                 width:100%; margin:0 0 4rem 0;
@@ -293,29 +295,25 @@
 
     }
     @media screen and (max-width: 602px) {
-        .section__container {
-           padding-left:0;
+        .footer__group {
+            font-size:0.75rem;
+            margin:12.4375em 0;
+            padding:1em;
+        }
+        .footer__container {
+           padding:0;
         }
             .footer__siteMap {
-               width:100%; margin:0 0 4rem 0;
+               width:100%; margin:0 0 1em 0;
                 }
             .footer__contact {
-                width:100%; margin:0rem 0 4rem 0;
+                width:100%; margin:0 0 1em 0;
             }
             .footer__careers {
-                width:100%; margin:0rem 0 4rem 0;
+                width:100%; margin:0 0 1em 0;
             }
         .footer__legalCopy {
-            font-size:0.75rem; line-height:1.5em; left:25%; right:25%;
+            font-size:0.75em; line-height:1.5em;
         }
 
-    }
-    @media screen and (max-width: 470px) {
-        .footer__group {
-            margin:12.4375rem 0;
-        }
-        .footer__legalCopy {
-            font-size:0.75rem; line-height:1.5em; margin-top:1rem; white-space:normal;
-            left:5%; right:5%;
-        }
     }
