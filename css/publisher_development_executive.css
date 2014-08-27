@@ -51,17 +51,18 @@
                 .mainNav__link:hover {
                     color:#2074c9;
                 }
-                #mainNav__currentPage {
-                    border-bottom:0.0625rem solid #2074c9;
-                }
 
     /* content classes */
     .jobDescription__group {
         font-family: 'MuseoSans', Arial, Helvetica, sans-serif; font-weight:100; font-size:1em;
-        padding:5rem 0; background-color:white;
+        padding:2rem 0; background-color:white;
     }
+        .jobDescription__container{
+            margin:0 25%;
+
+        }
             .crumbNav__link {
-                margin:2.625rem 1.5rem 2.75rem 3.875rem;
+                margin:5rem 1rem 5rem 0;
                 color:#626262; font-size:1em;
                 font-family: 'MuseoSans', Arial, Helvetica, sans-serif; font-weight:500;
                 text-decoration: none;
@@ -71,14 +72,11 @@
                 }
                 #crumbNav__currentPage {
                     border-bottom:0.0625rem solid #2074c9;
+                    margin:0 0 0 1rem;
                 }
-        .jobDescription__container{
-            margin:0 25%;
-
-        }
             .intro__title {
                 font-weight:100; font-size:1.5em; color:#626262; 
-                padding:0; margin:0 0 1.7em 0;
+                padding:0; margin:4.875rem 0 1.7em 0;
                 text-align:left;
             }
             .intro__copy {
@@ -176,6 +174,9 @@
                     .mainNav__link {
                         margin:2.2em 1.5em 0em 0; 
                     }
+                        #crumbNav__currentPage {
+                            margin:0;
+                        }
         .jobDescription__group {
             padding:0 0 2.5em 0; font-size:0.75rem;
         }
@@ -183,6 +184,12 @@
                 padding:3em;
                 margin: 0;
             }
+                .crumbNav__link {
+                    white-space:nowrap;
+                    margin:5rem 1rem 5rem 0;
+                    line-height:1.5;
+                }
+                    
                 .content__title {
                     margin-top:1em;
                 }
