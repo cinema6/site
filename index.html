@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,minimal-ui">
     <link rel="stylesheet" href="css/splash.css">
     <script src="js/modernizr.custom.18331.js"></script>
-
+    
     <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.5/TweenLite.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.5/TimelineLite.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.5/easing/EasePack.min.js"></script>
@@ -51,35 +51,39 @@
                 <div id="iPad-tooltip" class="ipad__tooltip">Custom video experiences coming soon to desktop and mobile devices.</div>
 
                 <div id="iPhone" class="iphone__img clearfix">&nbsp;</div>
-                <div id="iPhone-tooltip" class="iphone__tooltip">Want a career with us? Check out our careers page for amazing job opportunities.</div>
+                <div id="iPhone-tooltip" class="iphone__tooltip">Custom video experiences coming soon to desktop and mobile devices.</div>
             </div>        
         </article> 
         <footer class="footer__group">
-            <ul class="footer__section">
-                <li class="footer__h1">Site Map</li>
-                <li class="siteMap__list">
-                    <a href="google.com" class="footer__nav--active">Home</a>
-                </li>
-                <li class="siteMap__list">
-                    <a href="google.com" class="footer__nav--active">Careers</a>
-                        <li class="siteMap__subList">
-                            Publisher Development Executive
+            <div class="footer__container clearfix">
+                <nav class="footer__siteMap">
+                    <h3 class="footer__header">Site Map</h3>
+                    <ul class="siteMap__list">
+                        <li>
+                            <a href="/" class="footer__link" title="Navigate to home page">Home</a>
                         </li>
-                        <li class="siteMap__subList">
-                            Other Kick-ass Positions
-                        </li>   
-                </li>
-            </ul>
-            <section class="footer__section">
-                <p class="footer__h1">Let&lsquo;s talk</p>
-                    <p class="footer__copy">We are CINEMA6 and we&lsquo;re here to change how you experience video. Shoot us <a href="mailto:info@cinema6.com" alt="Email us at info@cinema6.com">an email</a>.</p>
-            </section>
-            <section class="footer__section">
-                <p class="footer__h1">Join us</p>
-                    <p class="footer__copy">Have you checked out our Careers page yet? Serisouly, get on that. We&lsquo;re really awesome and we want to work with you.</p>
-            </section>
-            <p class="footer__legalCopy">&copy; Copyright 2014 Cinema6, Inc. All rights reserved.</p>
+                        <li>
+                            <a href="/careers.html" class="footer__link" title="Navigate to careers">Careers</a>
+                            <ul class="siteMap__list">
+                                <li class="siteMap__subList">
+                                    <a href="/publisher_development_executive.html" class="footer__link" title="Navigate to Publisher Development Executive">Publisher Development Executive</a>
+                                </li>
+                            </ul>   
+                        </li>
+                    </ul>
+                </nav>
+                <section class="footer__contact">
+                    <h3 class="footer__header">Let&lsquo;s talk</h3>
+                    <p class="footer__copy">We are CINEMA6 and we&lsquo;re here to change how you experience video. <a href="mailto:info@cinema6.com" class="footer__link" title="Email us at info@cinema6.com">Shoot us an email</a>.</p>
+                </section>
+                <section class="footer__careers">
+                    <h3 class="footer__header">Join us</h3>
+                    <p class="footer__copy">Have you checked out our <a href="/careers.html" class="footer__link" title="Navigate to careers">Careers page</a> yet? Serisouly, get on that. We&lsquo;re really awesome and we want to work with you.</p>
+                </section>
+            </div>
+            <p class="footer__legalCopy clearfix">&copy; Copyright 2014 Cinema6, Inc. All rights reserved.</p>
         </footer>
+    </div>
     <script src="js/init.js"></script>
 </body>
 </html>

@@ -1,0 +1,316 @@
+/*  ==========================================================================
+    global styles
+    ========================================================================== */
+    body {
+        -webkit-text-size-adjust: 100%; background-color:#eee; margin:0;
+    }
+    @font-face {
+        font-family: 'MuseoSans';
+        src: url('museosans-100-webfont.eot');
+        src: url('museosans-100-webfont.eot?#iefix') format('embedded-opentype'),
+             url('museosans-100-webfont.woff') format('woff'),
+             url('museosans-100-webfont.svg#museo_sans100') format('svg'),
+             url('museosans-100-webfont.ttf') format('truetype');
+        font-weight: 100;
+        font-style: normal;
+    }
+
+    /*  ==========================================================================
+    helper classes
+    ========================================================================== */
+    .clearfix:before,
+    .clearfix:after {
+        content: ' ';
+        display: table;
+    }
+    .clearfix:after {
+        clear: both;
+    }
+
+    /*  ==========================================================================
+    c6-careers classes
+    ========================================================================== */
+    /* header classes */
+    .mainNav__group {
+        /*background: center 100% repeat-y url(../img/grid.png) #eee;*/
+        background-color:#eee;
+        border-bottom:0.125rem solid #c6c6c6; height:6.0625rem; 
+    }
+        .mainNav__container{
+            margin:0 25%;
+        }
+            .c6logo {
+                width:183px; height:44px; margin:1.75rem;
+            }
+            .mainNav__link {
+                float:right; margin:2.625rem 1.5rem 2.75rem 3.875rem;
+                color:#626262; font-size:1em;
+                font-family: 'MuseoSans', Arial, Helvetica, sans-serif; font-weight:500;
+                text-decoration: none;
+            }
+                .mainNav__link:hover {
+                    color:#2074c9;
+                }
+
+    /* content classes */
+    .jobDescription__group {
+        font-family: 'MuseoSans', Arial, Helvetica, sans-serif; font-weight:100; font-size:1em;
+        padding:2rem 0; background-color:white;
+    }
+        .jobDescription__container{
+            margin:0 25%;
+
+        }
+            .crumbNav__link {
+                margin:5rem 1rem 5rem 0;
+                color:#626262; font-size:1em;
+                font-family: 'MuseoSans', Arial, Helvetica, sans-serif; font-weight:500;
+                text-decoration: none;
+            }
+                .crumbNav__link:hover {
+                    color:#2074c9;
+                }
+                #crumbNav__currentPage {
+                    border-bottom:0.0625rem solid #2074c9;
+                    margin:0 0 0 1rem;
+                }
+            .intro__title {
+                font-weight:100; font-size:1.5em; color:#626262; 
+                padding:0; margin:4.875rem 0 1.7em 0;
+                text-align:left;
+            }
+            .intro__copy {
+                font-size:1.25em; font-weight:100; color:#626262; line-height:2; /* 40px*/ 
+                padding:0; margin:0 0 4.6875rem 0; text-align:left;
+            }
+            .section__header {
+                font-size:1em; font-weight:300; color:#929292;
+                margin:0 0 1.25rem 0;
+            }
+                .section__responsibilities {
+                    list-style: none; line-height:1.5; /* 24px */
+                    font-weight:100; margin:0 0 4.6875rem 0; padding:0;
+                }
+                    .margin-bottom__1em {
+                        margin:0 0 1em 0;
+                    }
+                    .responsibilities__bold {
+                        color:#626262;
+                    }
+                .requirements__list {
+                    list-style: none; font-weight:100; line-height:1.5; color:#626262;
+                    margin:-.125em 0 4.6875rem 0;
+                }
+                .apply__header {
+                    font-size:1em; font-weight:300; color:#929292; text-align:center;
+                    margin-bottom:2.25em;
+                    
+                }
+                .apply__button {
+                    background-color:#2074c9; border: solid 1px #2074c9; outline:none;
+                    border-radius:5em; padding:1em; margin:0 auto 5em auto; display:block; width:12%;
+                    margin-bottom:4.6875rem;
+                    font-family: 'MuseoSans', Arial, Helvetica, sans-serif; font-weight:300; font-size:1.25em;
+                    text-align: center; color:white; text-decoration:none;
+                }
+                    .apply__button:hover {
+                        background-color:white; border: solid 1px #2074c9; outline:none;
+                        color:#2074c9;
+                    }
+
+
+    /*  header and content media queries */
+    @media screen and (min-width: 1500px) and (max-width: 1800px) {
+        .mainNav__container, .content__container {
+            margin:0 12%;
+        }
+        .jobDescription__container {
+            margin:0 12%;
+        }
+    }
+    @media screen and (min-width: 800px) and (max-width: 1499px) {
+        .mainNav__container {
+            margin:0 5%;
+        }
+        .jobDescription__container {
+            margin:0 3em; padding:0 1em;
+        }
+            .apply__button {
+                width:20%;
+            }
+        
+    }
+
+    @media screen and (min-width: 603px) and (max-width: 799px) {
+        .mainNav__container {
+            margin:0;
+        }
+            .mainNav__link {
+                margin:2.625rem 1rem 2.75rem 0.875rem;
+            }
+        .jobDescription__group {
+            padding:3rem 2em;
+        }
+        .jobDescription__container {
+            margin:0; padding:0 0.25em;
+        }
+            .apply__button {
+                width:20%;
+            }
+    }
+    @media screen and (max-width: 602px) {
+        .mainNav__container{
+            text-align:center; margin:0;
+            font-size:0.75rem;
+        }
+            .mainNav__group {
+                height:3.5em; 
+            }
+                .c6logo {
+                    margin:1.5em 0 0 0.5em;
+                    width:110px; height:27px; float:left;
+
+                }
+                    .mainNav__link {
+                        margin:2.2em 1.5em 0em 0; 
+                    }
+                        #crumbNav__currentPage {
+                            margin:0;
+                        }
+        .jobDescription__group {
+            padding:0 0 2.5em 0; font-size:0.75rem;
+        }
+            .jobDescription__container {
+                padding:3em;
+                margin: 0;
+            }
+                .crumbNav__link {
+                    white-space:nowrap;
+                    margin:5rem 1rem 5rem 0;
+                    line-height:1.5;
+                }
+                    
+                .content__title {
+                    margin-top:1em;
+                }
+                .apply__button {
+                    width:30%; margin-bottom:0;
+                }
+        }
+
+    /* footer classes */
+    .footer__group {
+        background-color:#eee; border-top: 0.125rem solid #c6c6c6; /* 1em */
+        padding:2.3125rem 25%; margin:0; line-height:1.5em; /* line-height:24px */
+        font-family: 'MuseoSans', Arial, Helvetica, sans-serif; font-size:0.875rem; /* 14px */
+    }
+        .footer__container {
+           max-width:100rem;
+        }
+            .footer__siteMap {
+                width:30%; margin:0 5% 4rem 0; min-width:9rem; padding:0; float:left; /*background-color:pink;*/
+            }
+            .footer__contact {
+                width:30%; margin:0 0 4rem 0; min-width:9rem; padding:0; float:left; /*background-color:yellow;*/
+            }
+            .footer__careers {
+                width:30%; margin:0 0 4rem 5%; min-width:9rem; padding:0; float:left; /*background-color:lime;*/
+            }
+
+                .footer__header {
+                    color:#8c8c8c; font-size:1rem; 
+                    font-family: 'MuseoSans', Arial, Helvetica, sans-serif; font-weight:300;
+                }
+                .footer__copy {
+                    font-size:1em; /* 14px */ color:#8c8c8c; text-decoration:none; 
+                }
+                .siteMap__list {
+                    padding:0; list-style: none; margin-bottom:0.025em;
+                }
+                        .footer__link {
+                            color:#4c4c4c; font-size:1em;
+                            font-family: 'MuseoSans', Arial, Helvetica, sans-serif; font-weight:500;
+                            text-decoration: none;
+                        }
+                        .footer__link:hover {
+                            color:#4c4c4c; text-decoration:underline;
+                        }
+                            .siteMap__subList {
+                                list-style: none; margin-left:1.5rem; font-size:1em;
+                            }
+                            .siteMap__subList:before {
+                                content:"•";
+                                color:#c6c6c6;
+                            }
+
+            .footer__legalCopy {
+                font-size:1em; text-align:center;
+                margin:0 25%;
+                color:#8c8c8c;
+            }
+
+    /* footer media queries */
+    @media screen and (min-width: 1500px) and (max-width: 1800px) {
+        .footer__group {
+            margin:0;
+            padding:2.25rem 12%;
+        }
+    }
+    @media screen and (min-width: 800px) and (max-width: 1499px) {
+        .footer__group {
+            padding:2.25rem 12%;
+        }
+    }
+    @media screen and (min-width: 603px) and (max-width: 799px) {
+    .footer__group {
+        padding:2.25rem 2rem;
+    }
+        .footer__container {
+            padding-left:0;
+        }
+            .footer__siteMap {
+               width:47%; margin:0 3% 4rem 0;
+                }
+            .footer__contact {
+                width:47%; margin:0 0 5.5rem 3%;
+            }
+            .footer__careers {
+                width:100%; margin:0 0 3.875rem 0;
+            }
+        .footer__legalCopy {
+            font-size:0.75rem; line-height:1.5em; margin:0 22%;
+        }
+
+    }
+    @media screen and (max-width: 602px) {
+        .footer__group{
+            font-size:0.75rem;
+            padding:1.5em; 
+        }
+            .footer__container {
+                padding-left:0;
+            }
+                .footer__siteMap {
+                   margin:0; width:100%;
+
+                    }
+                .footer__contact {
+                    width:100%; margin:0; 
+                }
+                .footer__careers {
+                    width:100%; margin:0 0 1em 0; 
+                }
+                .footer__header {
+                    margin:1em 0 0.5em 0;
+                }
+                    .footer__copy {
+                        margin:0;
+                    }
+                    .siteMap__list {
+                        margin:0;
+                    }
+            .footer__legalCopy {
+                font-size:.75em; line-height:1.5em; white-space:normal; margin:0;
+                
+            }
+    }
