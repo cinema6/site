@@ -51,63 +51,94 @@
                 .mainNav__link:hover {
                     color:#2074c9;
                 }
-                #mainNav__currentPage {
-                    border-bottom:0.0625rem solid #2074c9;
-                }
 
     /* content classes */
-    .content__group {
+    .jobDescription__group {
         font-family: 'MuseoSans', Arial, Helvetica, sans-serif; font-weight:100; font-size:1em;
-        text-align: center; padding:3.3rem 0 25.9375rem 0; background-color:white;
+        padding:2rem 0; background-color:white;
     }
-        .content__container{
+        .jobDescription__container{
             margin:0 25%;
 
         }
-            .content__title {
-                font-weight:500; font-size:1.75em; color:#626262; 
-                padding:0 0.5em; margin:0 0 1.2125em 0;
+            .crumbNav__link {
+                margin:5rem 1rem 5rem 0;
+                color:#626262; font-size:1em;
+                font-family: 'MuseoSans', Arial, Helvetica, sans-serif; font-weight:500;
+                text-decoration: none;
             }
-            .content__copy {
-                font-size:1rem; color:#626262; line-height:1.5; 
-                padding:0 0.5em; margin-bottom:3.875em;
-            }
-            .jobTitles__container {
-                margin:0; padding:0 35%; text-align:left;
-            }
-                .jobTitles__item {
-                    list-style: none; font-size:1rem; line-height:1.7em; color:#2074c9;
-                    padding:0;
+                .crumbNav__link:hover {
+                    color:#2074c9;
                 }
-                    .jobTitles__link {
+                #crumbNav__currentPage {
+                    border-bottom:0.0625rem solid #2074c9;
+                    margin:0 0 0 1rem;
+                }
+            .intro__title {
+                font-weight:100; font-size:1.5em; color:#626262; 
+                padding:0; margin:4.875rem 0 0.75em 0;
+                text-align:left;
+            }
+            .intro__copy {
+                font-size:1em; font-weight:100; color:#626262; line-height:1.5; /* 40px*/ 
+                padding:0; margin:0 0 4.6875rem 0; text-align:left;
+            }
+            .section__header {
+                font-size:1em; font-weight:300; color:#929292;
+                margin:0 0 1.25rem 0;
+            }
+                .section__responsibilities {
+                    list-style: none; line-height:1.5; /* 24px */
+                    font-weight:100; margin:0 0 4.6875rem 0; padding:0;
+                }
+                    .margin-bottom__1em {
+                        margin:0 0 1em 0;
+                    }
+                    .responsibilities__bold {
+                        color:#626262;
+                    }
+                .requirements__list {
+                    list-style: none; font-weight:100; line-height:1.5; color:#626262;
+                    margin:-.125em 0 4.6875rem 0;
+                }
+                .apply__header {
+                    font-size:1em; font-weight:300; color:#929292; text-align:center;
+                    margin-bottom:2.25em;
+                    
+                }
+                .apply__button {
+                    background-color:#2074c9; border: solid 1px #2074c9; outline:none;
+                    border-radius:5em; padding:1em; margin:0 auto 5em auto; display:block; width:12%;
+                    margin-bottom:4.625rem;
+                    font-family: 'MuseoSans', Arial, Helvetica, sans-serif; font-weight:300; font-size:1.25em;
+                    text-align: center; color:white; text-decoration:none;
+                }
+                    .apply__button:hover {
+                        background-color:white; border: solid 1px #2074c9; outline:none;
                         color:#2074c9;
                     }
-                        .jobTitles__link:hover {
-                            text-decoration:none;
-                        }
+
 
     /*  header and content media queries */
     @media screen and (min-width: 1500px) and (max-width: 1800px) {
         .mainNav__container, .content__container {
             margin:0 12%;
         }
-        .content__group {
-        padding:3.3rem 0 21rem 0;
+        .jobDescription__container {
+            margin:0 12%;
         }
     }
     @media screen and (min-width: 800px) and (max-width: 1499px) {
         .mainNav__container {
             margin:0 5%;
         }
-        .content__container {
-            margin:0 5%; padding:0 1em;
+        .jobDescription__container {
+            margin:0 3em; padding:0 1em;
         }
-        .content__group {
-            padding:3.3rem 0 11rem 0;
-        }
-            .jobTitles__container {
-                padding:0 30%;
+            .apply__button {
+                width:20%;
             }
+        
     }
 
     @media screen and (min-width: 603px) and (max-width: 799px) {
@@ -117,14 +148,14 @@
             .mainNav__link {
                 margin:2.625rem 1rem 2.75rem 0.875rem;
             }
-        .content__container{
-            margin:0; padding:0 0.25em;
-            }
-        .content__group {
-            padding:3.3rem 0 11.25rem 0;
+        .jobDescription__group {
+            padding:3rem 2em;
         }
-            .jobTitles__container {
-                padding:0 20%;
+        .jobDescription__container {
+            margin:0; padding:0 0.25em;
+        }
+            .apply__button {
+                width:20%;
             }
     }
     @media screen and (max-width: 602px) {
@@ -143,18 +174,28 @@
                     .mainNav__link {
                         margin:2.2em 1.5em 0em 0; 
                     }
-            .content__group {
-                padding:0 0 5em 0; font-size:0.75rem;
+                        #crumbNav__currentPage {
+                            margin:0;
+                        }
+        .jobDescription__group {
+            padding:0 0 2.5em 0; font-size:0.75rem;
+        }
+            .jobDescription__container {
+                padding:3em;
+                margin: 0;
             }
-                .content__container{
-                    margin:0 5%;
+                .crumbNav__link {
+                    white-space:nowrap;
+                    margin:5rem 1rem 5rem 0;
+                    line-height:1.5;
                 }
-                    .content__title {
-                        margin-top:1em;
-                    }
-                        .jobTitles__container {
-                            padding:0 10%;
-            }
+                    
+                .content__title {
+                    margin-top:1em;
+                }
+                .apply__button {
+                    width:30%; margin-bottom:0;
+                }
         }
 
     /* footer classes */
