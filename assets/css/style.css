@@ -112,7 +112,7 @@ article { text-align: left; }
 .navigation-brand:after { content: ''; display: table; }
 .navigation-brand .brand-logo  { width:215px; height:50px; }
 .navigation-brand .brand-logo .logo { display:block; height: 50px; background:url(../img/c6-logo@2x.png) center center / 100% auto no-repeat; }
-.fixmenu-clone .brand-logo .logo { background:url(../img/logo-inverted.png) center center no-repeat; }
+.fixmenu-clone .brand-logo .logo { background:url(../img/c6-logo--dark@2x.png) center center / 100% no-repeat; }
 .navigation-brand .brand-logo h4 { margin-top:15px; }
 .navigation-brand .brand-logo  a { color:#fff; }
 .navigation-navbar { display: block; }
