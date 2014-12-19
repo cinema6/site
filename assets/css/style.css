@@ -525,7 +525,10 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus { ou
 .footer .list-inline li .icon { color: #1ac6ff; font-size: 50px; }
 .footer .list-unstyled li { position: relative; padding-left: 30px; margin-bottom: 15px; font-size: 15px; line-height: 24px; }
 .footer .list-unstyled li .icon { position: absolute; left: 0; color: #1ac6ff; font-size: 20px; }
-.copyright { text-align: center; color: #fff; font-size: 14px; padding: 0px; font-weight: 300; opacity: 0.4; }
+.copyright { text-align: center; color: #fff; font-size: 14px; padding: 0px; font-weight: 300; }
+	.copyright a {
+		font-weight:bold;
+	}
 .footer .socials a:hover { text-decoration: none; opacity: 0.7; }
 
 
